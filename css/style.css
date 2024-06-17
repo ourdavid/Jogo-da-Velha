@@ -1,0 +1,120 @@
+body{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(243, 243, 243);
+}
+
+h1{
+    font-size: 42px;
+}
+
+/* buttons*/
+#button-container button{
+    background-color: rgb(255, 255, 255);
+    border:none;
+    padding: 12px 15px;
+    margin: 0px 10px;
+    font-weight: bold;
+    color: rgb(34, 34, 34);
+}
+
+#button-container button:hover{
+    background-color: rgb(192, 192, 192);
+    color: white;
+}
+
+/* game */
+#container{
+    display: flex;
+    width: 300px;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin: auto;
+    
+}
+.box{
+    height: 100px;
+    border: 5px solid black;
+    box-sizing: border-box;
+    flex: 1 1 33%;
+}
+#block-1,#block-2,#block-3{
+    border-top: none;
+}
+#block-3,#block-6,#block-9{
+    border-right: none;
+}
+#block-7,#block-8,#block-9{
+    border-bottom: none;
+}
+#block-1,#block-4,#block-7{
+    border-left: none;
+}
+
+/* simbolos */
+.x{
+    font-size: 65px;
+    color: rgb(4, 117, 117);
+    display: inline-block;
+    line-height: 100px;
+}
+.o{
+    width: 50px;
+    height: 50px;
+    border: 4px solid green;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 17px 0px 0px;
+
+}
+
+/* class de esconder*/
+
+/* .hide{
+    display: none !important;
+} */
+
+/*placar*/
+
+#scoreboard{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top:30px;
+    position: relative;
+    margin: auto;
+}
+
+#x-scoreboard{
+    color: rgb(4, 117, 117);
+    margin-right: 3px;
+}
+#o-scoreboard{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid green;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.scoreboard-box{
+    margin: 0 25px;
+}
+
+/*mensagem de vitoria*/
+
+#message p {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 150px;
+    width: 500px;
+    font-size: 50px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: none;
+}
